@@ -6,25 +6,30 @@
 </head>
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 <body>
-<img src="assets/image/pokewallpaper.png" id="pokeimg" />
+<img src="assets/image/allpokemon.jpg" id="pokeimg" />
+<div style="text-align: center;">
 	<h1>Inicia la Batalla Pokémon</h1>
 
-	<select required="">
+<div>
+   <select id="select1">
 		<option value="Pikachu">Pikachu</option>
 		<option value="Charmander">Charmander</option>
 		<option value="Squirtle">Squirtle</option>
 		<option value="Bulbasaur">Bulbasaur</option>
 	</select>
 
-	<select required="">
+	<select id="select2">
 		<option value="Pikachu">Pikachu</option>
 		<option value="Charmander">Charmander</option>
 		<option value="Squirtle">Squirtle</option>
 		<option value="Bulbasaur">Bulbasaur</option>
 	</select>
-	<input type="submit" value="Pelear">
 
-	
-	<script src="assets/main.js"></script>
+	<button type="submit" onclick="pelear(); return false">Pelear</button>
+
+</div>
+
+	<div id="resultado"></div>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
