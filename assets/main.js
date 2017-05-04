@@ -6,13 +6,13 @@ function Pokemon(nombre,color,poderDeAtaque){
 	this.poderDeAtaque = poderDeAtaque;
 
 	this.mostrarPokemon = function(){
-		return("Hola, soy " + this.nombre + " y soy de color " + this.color);
+		return("Hola, soy " + this.nombre + " y soy de color " + this.color)
 	}
 	this.aumentarAmistad = function(valor){
-		this.nivelDeAmistad = this.nivelDeAmistad + valor;
+		this.nivelDeAmistad = this.nivelDeAmistad + valor
 	}
 	this.atacar = function(pokemon){
-		Pokemon.vida = Pokemon.vida - this.poderDeAtaque;
+		pokemon.vida = pokemon.vida - this.poderDeAtaque
 	}
 }
 
